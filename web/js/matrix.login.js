@@ -4,17 +4,30 @@ $(document).ready(function(){
 	var login = $('#loginform');
 	var recover = $('#recoverform');
 	var speed = 400;
+	var registered  = $("#registered");
 
+
+
+	$("#to-register").click(function () {
+        $("#loginform").slideUp();
+        $("#registered").fadeIn();
+    });
 	$('#to-recover').click(function(){
-		
 		$("#loginform").slideUp();
 		$("#recoverform").fadeIn();
 	});
+
 	$('#to-login').click(function(){
-		
+
 		$("#recoverform").hide();
 		$("#loginform").fadeIn();
+
 	});
+	$("#back-login").click(function(){
+        $("#registered").hide();
+        $("#loginform").fadeIn();
+
+    });
 	
 	
 	$('#to-login').click(function(){
@@ -41,7 +54,6 @@ $(document).ready(function(){
         });
     });
 
-        
-        
+
     }
 });
