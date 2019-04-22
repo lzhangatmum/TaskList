@@ -41,11 +41,6 @@ $(document).ready(function() {
     });
 
 
-    $(window).on('load', function () {
-        $('#usertype').selectpicker({
-            'selectedText': 'cat'
-        });
-    });
 
     text_center.dblclick(function(){
         let val=$(this);
